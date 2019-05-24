@@ -25,8 +25,4 @@ class UserRole extends Model
         'password',
     ];
 
-    // public function user()
-    // {
-    //     return $this->belongsTo('App\User', 'roleid');
-    // }
 }
