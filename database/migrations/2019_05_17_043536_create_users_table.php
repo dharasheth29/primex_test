@@ -19,8 +19,8 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('email');
             $table->string('company');
-            $table->unsignedInteger('roleid');
-            $table->foreign('roleid')->references('id')->on('user_roles');
+            $table->unsignedInteger('role_id');
+            $table->foreign('role_id')->references('id')->on('user_roles');
             $table->timestamps();
         });
         
